@@ -26,12 +26,15 @@ function App() {
     const randomDimension = getRandomDimension(126);
     fetchDimension(randomDimension);
   }, []);
+//ponlo en relative lo que quieres que se vea al frente y absolute lo que quieres atras
+//lo que coloques de primero en absolute ba a ser lo que quede al fondo lo que
+//coloques de segundo en absolu va  a ser lo que quede adelante
   return (
-    <main className="relative min-h-screen bg-[url(public/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
+    <main className="relative min-h-screen bg-[url(./src/assets/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
       <img src="src/assets/logo.png"></img>
       <section className="">
         <div>
-          <div className="" run>
+          <div className=""run>
             <LocationForm handleSubmit={handleSubmit} />
           </div>
           <div>

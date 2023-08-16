@@ -27,7 +27,7 @@ function App() {
     fetchDimension(randomDimension);
   }, []);
   return (
-    <main className="relative min-h-screen bg-[url(public/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
+    <main className="relative min-h-screen bg-[url(/home/masterlks/Documents/003_React/ENTREGAS_React002.2/Entregable003_RickAndMorty/Lukas_-RickSanchezApp-_-1.1.1/public/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
       <img src="src/assets/logo.png"></img>
       <section className="">
         <div>

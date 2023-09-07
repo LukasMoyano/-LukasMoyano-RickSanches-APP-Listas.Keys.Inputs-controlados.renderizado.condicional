@@ -34,16 +34,16 @@ function App() {
   return (
     <main className="relative min-h-screen bg-[url(./public/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
       {/* Logo */}
-      <img src="/logo.png" alt="Logo"></img>
+      <img src="src/assets/logo.png" alt="Logo"></img>
       <section className="">
         <div>
           {/* Formulario para buscar ubicación */}
-          <div>
+          <div className="">
             <LocationForm handleSubmit={handleSubmit} />
           </div>
           <div>
             {/* Información de la ubicación actual */}
-            <LocationInfo currentLocation={currentLocation} />
+            <LocationInfo currentLocation={currentLocation} className="" />
           </div>
           <div className="mt-4 mx-8">
             <div>

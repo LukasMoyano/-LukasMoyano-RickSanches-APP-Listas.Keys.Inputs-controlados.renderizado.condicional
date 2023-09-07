@@ -5,7 +5,6 @@ import ResidentCard from "./ResidentCard";
 export const ResidentList = ({ residents }) => {
   // Define la cantidad de residentes a mostrar por página
   const RESIDENTS_PER_PAGE = 9;
-  
   // Estado para rastrear la página actual
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -37,7 +36,7 @@ export const ResidentList = ({ residents }) => {
 
       {/* Controles de paginación */}
       <div className="flex justify-center items-center space-x-4 my-4">
-        {/* Mostrar los índices de páginas */}
+        {/* Si se deben mostrar los índices de páginas */}
         {showIndexPagination && (
           <div className="flex items-center space-x-4">
             {/* Muestra los botones de índice */}

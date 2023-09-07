@@ -31,7 +31,7 @@ const ResidentCard = ({ residentUrl }) => {
       </header>
 
       {/* Sección principal de la tarjeta */}
-      <section className="relative h-[320px] w-[320px] top-0 bg-cover bg-[url(./targeta001.png)]  ">
+      <section className="relative h-[320px] w-[320px] top-0 bg-cover bg-[url(./public/targeta001.png)]  ">
         {/* Nombre del residente */}
         <h3 className="top-10 right-1/2 translate-x-1/2 absolute text-[#893446] text-center font-Creepster text-3xl font-bold">
           {residentInfo?.name}

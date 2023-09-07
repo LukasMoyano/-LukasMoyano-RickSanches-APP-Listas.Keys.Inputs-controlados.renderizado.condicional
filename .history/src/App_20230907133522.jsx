@@ -32,10 +32,7 @@ function App() {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-[url(/public/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
-
-
-      
+    <main className="relative min-h-screen bg-[url(/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
       {/* Logo */}
       <img src="/logo.png" alt="Logo"></img>
       <section className="">

@@ -9,10 +9,7 @@ function App() {
   const [currentLocation, setCurrentLocation] = useState(null);
 
   // Función para manejar el envío del formulario
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newLocation = e.target[0].value;
-
+  const handleSubmit = (newLocation) => {
     fetchDimension(newLocation);
   };
 
@@ -32,31 +29,22 @@ function App() {
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-[url(/public/RickAndMorty_BigBg000.jpg)] bg-b bg-cover">
-
-
-      
+    <div>
       {/* Logo */}
-      <img src="/logo.png" alt="Logo"></img>
-      <section className="">
+      <img src="/logo.png" alt="Logo" />
+      <div>
+        {/* Formulario para buscar ubicación */}
+        <LocationForm handleSubmit={handleSubmit} />
+        {/* Información de la ubicación actual */}
+        <LocationInfo currentLocation={currentLocation} />
+      </div>
+      <div className="mt-4 mx-8">
         <div>
-          {/* Formulario para buscar ubicación */}
-          <div>
-            <LocationForm handleSubmit={handleSubmit} />
-          </div>
-          <div>
-            {/* Información de la ubicación actual */}
-            <LocationInfo currentLocation={currentLocation} />
-          </div>
-          <div className="mt-4 mx-8">
-            <div>
-              {/* Lista de residentes de la ubicación actual */}
-              <ResidentList residents={currentLocation?.residents ?? []} />
-            </div>
-          </div>
+          {/* Lista de residentes de la ubicación actual */}
+          <ResidentList residents={currentLocation?.residents ?? []} />
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }
 
